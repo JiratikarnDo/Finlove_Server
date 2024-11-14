@@ -408,7 +408,7 @@ app.get('/api/user/:id', async function (req, res) {
     const sql = `
     SELECT 
         u.username, u.email, u.firstname, u.lastname, u.nickname, 
-        u.verify,  -- เพิ่มฟิลด์ verify
+        u.verify,
         g.Gender_Name AS gender, ig.interestGenderName AS interestGender, 
         u.height, u.home, u.DateBirth, u.imageFile,
         e.EducationName AS education,
